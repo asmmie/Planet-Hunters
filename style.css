@@ -366,6 +366,7 @@ a {
   }
   .fight-wrapper h1 {
     font-size: 32px;
+    margin: 0 0 12px 0;
   }
   .line-top,
   .line-bottom {
