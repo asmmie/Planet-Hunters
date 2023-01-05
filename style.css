@@ -210,7 +210,7 @@ a {
 }
 .story-wrapper {
   padding: 16px 0;
-  background: url(/images/bg_story.webp) center/cover no-repeat;
+  background: url(./src/images/bg_story.webp) center/cover no-repeat;
   height: 1408px;
 }
 .story-inner {
@@ -349,16 +349,16 @@ a {
   right: 0;
 }
 .fight-first-top {
-  background: url("./images/bg-line-top-black.svg") right/cover no-repeat;
+  background: url("./src/images/bg-line-top-black.svg") right/cover no-repeat;
 }
 .fight-first-bottom {
-  background: url("./images/bg-line-bottom-color.svg") left/cover no-repeat;
+  background: url("./src/images/bg-line-bottom-color.svg") left/cover no-repeat;
 }
 .fight-second-top {
-  background: url("./images/bg-line-top-color.svg") right/cover no-repeat;
+  background: url("./src/images/bg-line-top-color.svg") right/cover no-repeat;
 }
 .fight-second-bottom {
-  background: url("./images/bg-line-bottom-black.svg") left/cover no-repeat;
+  background: url("./src/images/bg-line-bottom-black.svg") left/cover no-repeat;
 }
 @media screen and (max-width: 670px) {
   .fight-container {
