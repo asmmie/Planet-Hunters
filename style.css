@@ -107,7 +107,7 @@ a {
   display: block;
   letter-spacing: 1px;
   text-align: center;
-  padding: 12px 42px;
+  padding: 12px 38px;
   color: #000;
   font-weight: bold;
 }
@@ -164,23 +164,21 @@ a {
   font-size: 34px;
   margin: 28px 0 40px 0;
 }
-.play-btn,
-.fight-btn {
-  padding: 18px 0;
+.play-btn-link {
   background-color: var(--main-color);
-  width: 230px;
-}
-.play-btn-link,
-.fight-btn a {
-  display: block;
+  padding: 18px 70px;
   text-align: center;
   font-size: 18px;
   text-decoration: none;
   color: #000;
   font-weight: bold;
   font-size: 18px;
-  height: 100%;
-  width: 100%;
+}
+.fight-btn {
+  margin: 0 auto;
+  display: block;
+  width: 230px;
+  padding: 18px 0;
 }
 
 @media screen and (max-width: 670px) {
@@ -196,12 +194,13 @@ a {
     margin-top: 24px;
     margin-bottom: 30px;
   }
-  .play-btn,
-  .fight-btn {
-    width: 170px;
-  }
   .play-btn-link {
     font-size: 16px;
+    padding: 17px 44px;
+  }
+  .fight-btn {
+    width: 170px;
+    padding: 17px 0;
   }
 }
 
@@ -209,7 +208,6 @@ a {
 
 .story-container {
   background-color: #000000;
-  width: 100%;
 }
 .story-wrapper {
   padding: 16px 0;
@@ -227,6 +225,7 @@ a {
   color: var(--main-color);
   font-size: 80px;
   margin: 12px 0 6px 0;
+  letter-spacing: 4px;
 }
 .title-bar {
   background-color: var(--main-color);
@@ -307,10 +306,27 @@ a {
     margin-top: 48px;
   }
 }
+
+@media screen and (max-width: 1068px) {
+  .story-wrapper {
+    height: fit-content;
+  }
+  .story-top,
+  .story-bottom {
+    flex-direction: column;
+  }
+  .story-dscrptn {
+    margin-bottom: 36px;
+  }
+  .fight-container {
+    height: 411px;
+  }
+}
+
 /* fight */
 
 .fight-container {
-  height: 410px;
+  height: 350px;
   margin: 0;
 }
 .fight-wrapper {
@@ -327,8 +343,9 @@ a {
 .fight-wrapper h1 {
   font-size: 64px;
   font-weight: bold;
+  letter-spacing: 4px;
   color: #fff;
-  margin: 0 0 26px 0;
+  margin: 0 0 20px 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -365,7 +382,7 @@ a {
 }
 @media screen and (max-width: 670px) {
   .fight-container {
-    height: 275px;
+    height: 275px !important;
   }
   .fight-wrapper h1 {
     font-size: 32px;
@@ -393,6 +410,7 @@ a {
   margin: 0;
   color: #000;
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 .trailer-inner {
   max-width: 1110px;
@@ -439,8 +457,10 @@ a {
   align-items: center;
   margin: 0 30px;
 }
-.footer-play-btn,
-.footer-play-btn-link {
+.copyright {
+  font-size: 14px;
+}
+.footer-play-btn {
   display: none;
 }
 
@@ -453,25 +473,13 @@ a {
     margin: 32px 30px 0 30px;
     flex-direction: column;
   }
-  .footer-play-btn,
-  .footer-play-btn-link {
+  .footer-play-btn {
     display: block;
     width: 100%;
+    padding: 18px 0;
   }
   .copyright {
     margin: 24px auto 36px auto;
-  }
-}
-
-@media screen and (max-width: 1068px) {
-  .story-wrapper {
-    height: fit-content;
-  }
-  .story-top,
-  .story-bottom {
-    flex-direction: column;
-  }
-  .story-dscrptn {
-    margin-bottom: 36px;
+    font-size: 11px;
   }
 }
