@@ -380,9 +380,16 @@ a {
 .fight-second-bottom {
   background: url("./src/images/bg-line-bottom-black.svg") left/cover no-repeat;
 }
+
+@media screen and (max-width: 1068px) {
+  .fight-container {
+    height: 411px;
+  }
+}
+
 @media screen and (max-width: 670px) {
   .fight-container {
-    height: 275px !important;
+    height: 275px;
   }
   .fight-wrapper h1 {
     font-size: 32px;
@@ -394,6 +401,9 @@ a {
     width: 50vw;
   }
 }
+
+/* trailer */
+
 .trailer-container {
   height: 930px;
   background-color: var(--main-color);
