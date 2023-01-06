@@ -46,7 +46,7 @@
         loop
       ></video>
     </div>
-    <nav>
+    <header>
       <div class="nav-container">
         <div class="nav-wrapper">
           <div class="nav-logo">
@@ -54,7 +54,7 @@
               <img src="./src/images/logo.svg" alt="Planet Huters ロゴ" />
             </a>
           </div>
-          <div class="nav-menu">
+          <nav class="nav-menu">
             <ul class="nav-links">
               <li class="nav-link"><a href="#story">STORY</a></li>
               <li class="nav-link"><a href="#trailer">TRAILER</a></li>
@@ -62,108 +62,129 @@
                 <a href=""> PLAY NOW </a>
               </li>
             </ul>
+          </nav>
+          <div id="sound">
+            <div class="sound-btn">
+              <span class="sound-text">SOUND OFF</span>
+              <span class="sound-icon material-icons-round md-gray">
+                volume_up
+              </span>
+            </div>
+            <audio
+              class="bgm"
+              src="./src/audio/cinematic-melody-main-9785.mp3"
+              loop
+            ></audio>
           </div>
-          <!-- <div id="sound">
-            <span>SOUND OFF</span>
-            <span class="material-icons-round">
-volume_up
-</span>
-          </div> -->
         </div>
       </div>
-    </nav>
-    <main class="hero-main" id="top">
-      <div class="hero-titles">
-        <h2 id="vr">VR GAME</h2>
-        <h1 class="hero-title">Planet</h1>
-        <h1 class="hero-title">Hunters</h1>
-        <h2 id="secondary-title">惑星を奪還せよ</h2>
-        <a class="play-btn-link" href=""> PLAY NOW </a>
-      </div>
+    </header>
+    <main>
+      <section class="hero-main" id="top">
+        <div class="hero-titles">
+          <h2 id="vr">VR GAME</h2>
+          <h1 class="hero-title">Planet</h1>
+          <h1 class="hero-title">Hunters</h1>
+          <h2 id="secondary-title">惑星を奪還せよ</h2>
+          <a class="play-btn-link" href=""> PLAY NOW </a>
+        </div>
+        <a href="#story" class="scroll-icon">
+          <span class="scroll-text">Scroll</span>
+        </a>
+        <div class="news-bar">
+          <p class="news-slide">
+            <span id="news-date">30.02.20</span>
+            <span id="news-content"
+              >バージョン5.6リリース：アバター・アイテム大量追加</span
+            >
+          </p>
+        </div>
+        <div class="line-bottom fight-second-bottom"></div>
+      </section>
+      <section id="story">
+        <div class="story-container">
+          <div class="story-wrapper">
+            <div class="story-inner">
+              <div class="story-top">
+                <div class="story-dscrptn story-top-dscrptn">
+                  <h2>STORY</h2>
+                  <div class="title-bar"></div>
+                  <h3>奪われた故郷の星を取り戻せ<br />壮大なSFファンタジー</h3>
+                  <p>
+                    銀河歴222年、惑星ネコチャンは、ボスネコ将軍の率いる軍の反乱により完全に制圧された。将軍の側近マンチカンは軍政府に従わない人間を辺境の星ニャゴーへ強制的に追放。食料や資源の乏しいニャゴーでは多くの難民が発生し飢餓に苦しんでいた。ニャゴーのスラム街で育った孤児の姉弟がいた。姉のミケと弟のタマは母親をボスネコ将軍に殺された事実を知る。母の復讐のため、そして故郷の惑星ネコチャンを奪還すべく、ミケとタマはいま行動に出る！
+                  </p>
+                </div>
+                <div class="story-top-img">
+                  <div class="story-top-img-wrapper">
+                    <img src="./src/images/story01.webp" alt="ミケとタマ" />
+                  </div>
+                </div>
+              </div>
+              <div class="story-bottom">
+                <div class="story-dscrptn story-bottom-dscrptn">
+                  <h3>隠された陰謀を暴け<br />衝撃的な事実に驚愕</h3>
+                  <p>
+                    ミケとタマはネコジャラシ作戦により軍政府の最新鋭の小型船チュールを奪うことに成功。チュールのハイテンションワープ星間航行により惑星ネコチャンへあとわずか３時間で到着という時、小惑星帯アビシニアンで謎の救難信号を受信する。意外にも信号の発信源はボスネコ将軍だった。彼は今にも絶えそうなかすれた声で「私はおまえたちミケとタマの父親なのだ」と語る。その瞬間、ミケとタマの育ての親同然で仲間のはずのホワイトオッドアイがタマの背中を刀で切り裂いたのだった......
+                  </p>
+                </div>
+                <div class="story-bottom-img">
+                  <div class="story-bottom-img-wrapper">
+                    <img
+                      src="./src/images/story02.webp"
+                      alt="小惑星帯アビシニアンで謎の救難信号を受信"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="fight-container">
+          <div class="fight-wrapper">
+            <div class="line-top fight-first-top"></div>
+            <div class="fight-inner">
+              <h2>Are you ready to fight?</h2>
+              <a class="play-btn-link fight-btn" href=""> PLAY NOW </a>
+            </div>
+            <div class="line-bottom fight-first-bottom"></div>
+          </div>
+        </div>
+      </section>
+      <section id="trailer">
+        <div class="trailer-container">
+          <div class="trailer-wrapper">
+            <div class="trailer-inner">
+              <h2>Trailer</h2>
+              <div class="trailer-bar"></div>
+              <iframe
+                class="youtube"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/RO_RRKTYzUY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="fight-container">
+          <div class="fight-wrapper">
+            <div class="line-top fight-second-top"></div>
+            <div class="fight-inner">
+              <h2>Are you ready to fight?</h2>
+              <a class="play-btn-link fight-btn" href=""> PLAY NOW </a>
+            </div>
+            <div class="line-bottom fight-second-bottom"></div>
+          </div>
+        </div>
+      </section>
     </main>
-    <section id="story">
-      <div class="story-container">
-        <div class="story-wrapper">
-          <div class="story-inner">
-            <div class="story-top">
-              <div class="story-dscrptn story-top-dscrptn">
-                <h1>STORY</h1>
-                <div class="title-bar"></div>
-                <h3>奪われた故郷の星を取り戻せ<br />壮大なSFファンタジー</h3>
-                <p>
-                  銀河歴222年、惑星ネコチャンは、ボスネコ将軍の率いる軍の反乱により完全に制圧された。将軍の側近マンチカンは軍政府に従わない人間を辺境の星ニャゴーへ強制的に追放。食料や資源の乏しいニャゴーでは多くの難民が発生し飢餓に苦しんでいた。ニャゴーのスラム街で育った孤児の姉弟がいた。姉のミケと弟のタマは母親をボスネコ将軍に殺された事実を知る。母の復讐のため、そして故郷の惑星ネコチャンを奪還すべく、ミケとタマはいま行動に出る！
-                </p>
-              </div>
-              <div class="story-top-img">
-                <div class="story-top-img-wrapper">
-                  <img src="./src/images/story01.webp" alt="ミケとタマ" />
-                </div>
-              </div>
-            </div>
-            <div class="story-bottom">
-              <div class="story-dscrptn story-bottom-dscrptn">
-                <h3>隠された陰謀を暴け<br />衝撃的な事実に驚愕</h3>
-                <p>
-                  ミケとタマはネコジャラシ作戦により軍政府の最新鋭の小型船チュールを奪うことに成功。チュールのハイテンションワープ星間航行により惑星ネコチャンへあとわずか３時間で到着という時、小惑星帯アビシニアンで謎の救難信号を受信する。意外にも信号の発信源はボスネコ将軍だった。彼は今にも絶えそうなかすれた声で「私はおまえたちミケとタマの父親なのだ」と語る。その瞬間、ミケとタマの育ての親同然で仲間のはずのホワイトオッドアイがタマの背中を刀で切り裂いたのだった......
-                </p>
-              </div>
-              <div class="story-bottom-img">
-                <div class="story-bottom-img-wrapper">
-                  <img
-                    src="./src/images/story02.webp"
-                    alt="小惑星帯アビシニアンで謎の救難信号を受信"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="fight-container">
-        <div class="fight-wrapper">
-          <div class="line-top fight-first-top"></div>
-          <div class="fight-inner">
-            <h1>Are you ready to fight?</h1>
-            <a class="play-btn-link fight-btn" href=""> PLAY NOW </a>
-          </div>
-          <div class="line-bottom fight-first-bottom"></div>
-        </div>
-      </div>
-    </section>
-    <section id="trailer">
-      <div class="trailer-container">
-        <div class="trailer-wrapper">
-          <div class="trailer-inner">
-            <h1>Trailer</h1>
-            <div class="trailer-bar"></div>
-            <iframe
-              class="youtube"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/RO_RRKTYzUY"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="fight-container">
-        <div class="fight-wrapper">
-          <div class="line-top fight-second-top"></div>
-          <div class="fight-inner">
-            <h1>Are you ready to fight?</h1>
-            <a class="play-btn-link fight-btn" href=""> PLAY NOW </a>
-          </div>
-          <div class="line-bottom fight-second-bottom"></div>
-        </div>
-      </div>
-    </section>
     <footer>
       <div class="footer-container">
         <div class="footer-content">
@@ -186,5 +207,6 @@ volume_up
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
