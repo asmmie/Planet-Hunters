@@ -224,16 +224,16 @@ a {
   line-height: 44px;
   font-size: 13px;
   font-weight: bold;
-  position: relative;
 }
-.scroll-text::after {
+.scroll-bar {
   content: "";
   display: block;
   height: 2px;
   width: 50px;
   background-color: var(--main-color);
+  position: relative;
 }
-.scroll-text::before {
+.scroll-bar::before {
   content: "";
   display: block;
   height: 10px;
@@ -241,8 +241,8 @@ a {
   border-radius: 50%;
   background-color: var(--main-color);
   position: absolute;
-  bottom: -4px;
-  left: -12px;
+  top: -4px;
+  left: -6px;
   animation: 1.5s ease-in-out infinite scroll-point;
 }
 @keyframes scroll-point {
