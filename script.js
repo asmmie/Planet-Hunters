@@ -4,7 +4,6 @@ const soundText = document.querySelector(".sound-text");
 let toggle;
 soundBtn.onclick = () => {
     toggle = !toggle;
-    console.log(toggle);
     if (toggle) {
         audio.play();
         soundText.innerText = "SOUND ON";
