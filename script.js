@@ -15,3 +15,12 @@ soundBtn.onclick = () => {
     }
 }
 
+const loadingScreen = document.querySelector(".loading-screen");
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    loadingScreen.classList.add("fadeout");
+  }, 1600);
+  setTimeout(() => {
+    loadingScreen.style.display = "none";
+  }, 5000);
+});
