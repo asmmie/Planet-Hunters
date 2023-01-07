@@ -17,8 +17,11 @@ soundBtn.onclick = () => {
 
 const loadingScreen = document.querySelector(".loading-screen");
 window.addEventListener("load", () => {
+    document.body.style.position = "fixed";
+    document.body.style.top = "0";
   setTimeout(() => {
     loadingScreen.classList.add("fadeout");
+    document.body.style.position = "";
   }, 1600);
   setTimeout(() => {
     loadingScreen.style.display = "none";
