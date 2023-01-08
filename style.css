@@ -30,7 +30,6 @@ a {
   height: 100%;
   width: 100vw;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: opacity 0.5s ease-out;
@@ -54,6 +53,7 @@ a {
 .atom-spinner {
   height: 60px;
   width: 60px;
+  margin: auto;
   overflow: hidden;
 }
 
