@@ -16,10 +16,12 @@ soundBtn.onclick = () => {
 }
 
 const loadingScreen = document.querySelector(".loading-screen");
+const loadingContainer = document.querySelector(".loading-container");
 window.addEventListener("load", () => {
     document.body.style.position = "fixed";
     document.body.style.top = "0";
   setTimeout(() => {
+    loadingContainer.style.display = "none";
     loadingScreen.classList.add("fadeout");
     document.body.style.position = "";
   }, 1600);
